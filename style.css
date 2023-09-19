@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces&family=Montserrat&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Montserrat";
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    width: 100vw;
+    height: 95vh;
+}
+.attribution{
+    width: 100vw;
+    height: 5vh;
+    background-color: hsl(30, 38%, 92%);
+
+}
+.main{
+    background-color: white;
+    width: 700px;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    margin: 20px;
+}
+.left{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+.productd{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.productm{
+    position: absolute;
+    width: 0%;
+    height: 0%;
+}
+
+.right div{
+    margin: 10px;
+    width: 80%;
+}
+.category{
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 5px;
+}
+.name{
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-size: 44px;
+}
+.details{
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+.real{
+    font-size: 42px;
+    color: rgba(61,129,104,255);
+    font-weight: 700;
+    font-family: "Fraunces";
+}
+.dis{
+    font-size: 1rem;
+    text-decoration: line-through;
+}
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button{
+    width: 100%;
+    background-color: rgba(61,129,104,255);
+    color: white;
+    border: none;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+button:hover{
+    cursor: pointer;
+}
+@media screen and (max-width:700px) {
+    .real{
+        font-size: 6vw;
+    }
+    .dis{
+        font-size: 2vw;
+    }
+    .category{
+        font-size: 2.5vw;
+    }
+    .name{
+        font-size: 6vw;
+    }
+    .details{
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width:376px) {
+    .main{
+        display: flex;
+        height: 90%;
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        height: 80%;
+        margin-bottom: 15px;
+        border-bottom-left-radius: 0px;
+    }
+    .right{
+        width: 100%;
+        height: auto;
+    }
+    .real{
+        font-size: 10vw;
+    }
+    .dis{
+        font-size: 3vw;
+    }
+    .category{
+        font-size: 3vw;
+    }
+    .name{
+        font-size: 9vw;
+    }
+    .details{
+        font-size: 3vw;
+    }
+    .right div{
+        margin: 5px;
+    }
+    button{
+        margin-bottom: 15px;
+    }
+    img{
+        src: url("../images/image-product-mobile.jpg");
+        
+    }
+    .productm{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .productd{
+        position: absolute;
+        width: 0%;
+        height: 0%;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+}
